@@ -1,0 +1,15 @@
+
+STEPS FOLLOWED:-
+
+1.download s1 and s2 results from ktu website
+https://ktu.edu.in/eu/res/viewExamResults.htm?examDefIdEnr=LpBmCci4xl%2BUU1ElM5Ta7ur7NwV9ySMu8tz0hktxfio%3D&type=33X30ZkQBhbZtfM52WojhuPuSdt1pxpni%2FaM98VfPH4%3D&publishId=pCMWMQ%2BL4VDY%2BvpE2LT5AZ7kbSeO3hZL1ABW%2BR64%2FbY%3D
+
+2.convert pdf file to txt file
+3.filter out computer science results using grep and sed command after removing all the newline tab and enter characters
+4.select out 361 lines from MDL16CS001 onwards
+5.redirect output to a temp file
+6.cut and paste the grades from the results text file using '(' and ')' as the delimiter characters
+7.create an array credits with array elemnts as the credits alotted for each subject in the order of grades present
+8.calculate sgpa: (credits * equivalent grade point mark)/total credits
+9.calculate s1 and s2 sgpas and find total cgpa by: ((s1gpa*23)+(s2gpa*24))/47
+
