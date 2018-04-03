@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "this is a test of test file" > demo1.txt
-sed -i 's/test/trial/g' demo1.txt
+sed -i 's/test/trial/' demo1.txt
 cat demo1.txt
 rm demo1.txt
 
