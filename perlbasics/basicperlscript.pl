@@ -21,7 +21,7 @@ print $c;
 $a=10;
 #performs addition 
 $b=$a+20;
-#concatenates strings
+#concatenates two strings
 $c=$a."is a number \n";
 
 print "b= $b \n";
